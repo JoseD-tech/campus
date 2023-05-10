@@ -7,9 +7,9 @@ const toggleModal = () => {
 
 
 <template>
-  <div class="h-screen flex items-center justify-center">
+  <div class="h-screen flex items-center justify-center fondo">
     <div
-      class="bg-slate-300 bg-opacity-20 p-10 border rounded-xl shadow-md shadow-gray-500/20"
+      class="bg-white p-10 border rounded-xl shadow-md shadow-gray-500/20"
     >
       <img
         class="w-24 h-24 rounded-full mx-auto bg-center bg-cover mb-10 -mt-6"
@@ -34,4 +34,10 @@ const toggleModal = () => {
   </div>
 </template>
 
+
+<style scoped>
+.fondo {
+  background-image: url('@/public/fondo.jpg');
+}
+</style>
 
