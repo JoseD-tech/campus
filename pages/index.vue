@@ -91,9 +91,6 @@ const toggleModal = (modalactivo) => {
               <nuxt-link :to="enlaces.campusVirtuales[2].url" target="_blank"
                 class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300">{{
                   enlaces.campusVirtuales[2].titulo }}</nuxt-link>
-              <nuxt-link :to="enlaces.campusVirtuales[3].url" target="_blank"
-                class="block text-center py-4 mt-4 font-semibold bg-red-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-red-500 hover:text-red-500 ease-in-out duration-300">{{
-                  enlaces.campusVirtuales[3].titulo }}</nuxt-link>
             </div>
           </BaseModal>
         </div>
@@ -130,9 +127,11 @@ const toggleModal = (modalactivo) => {
           <BaseModal :modalActive="formacionCapacitacion" @close-modal="toggleModal('formacionCapacitacion')">
             <div class="text-black">
               <h1 class="text-4xl font-light mb-10 text-center">FORMACIÒN Y CAPACITACIÒN</h1>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300">Campues
-                Externo</nuxt-link>
+              <nuxt-link :to="enlaces.formacionCapacitacion[0].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-red-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-red-700 hover:text-red-700 ease-in-out duration-300">{{ enlaces.formacionCapacitacion[0].titulo }}</nuxt-link>
+              <nuxt-link to="" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300">Campus Externo</nuxt-link>
+
             </div>
           </BaseModal>
         </div>
@@ -142,11 +141,11 @@ const toggleModal = (modalactivo) => {
           <button type="button"
             class="block bg-teal-600 w-full h-full text-white font-medium uppercase rounded-md py-4 px-4 mb-4"
             @click="toggleModal('zonaCrea')">
-            ZONA CREA
+            ZONA DITED
           </button>
           <BaseModal :modalActive="zonaCrea" @close-modal="toggleModal('zonaCrea')">
             <div class="text-black">
-              <h1 class="text-4xl font-light mb-10 text-center">ZONA CREA</h1>
+              <h1 class="text-4xl font-light mb-10 text-center">ZONA DITED</h1>
               <nuxt-link :to="enlaces.zonaCrea[0].url" target="_blank"
                 class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300">{{
                   enlaces.zonaCrea[0].titulo }}</nuxt-link>
@@ -184,11 +183,14 @@ const toggleModal = (modalactivo) => {
       </div>
 
 
+    </div>
   </div>
-</div></template>
+</template>
 
 
-<style scoped>.fondo {
+<style scoped>
+.fondo {
   background-image: url('@/public/fondo.jpg');
-}</style>
+}
+</style>
 
