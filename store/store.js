@@ -11,7 +11,7 @@ export const useEnlaces = defineStore('Enlaces', {
                 url: 'http://edudigital.unellez.edu.ve/apure/otomacos/',
             },
             {
-                titulo: 'VARINAS',
+                titulo: 'VARINA',
                 url: 'https://varina.edudigital.unellez.edu.ve/',
             },
             {
