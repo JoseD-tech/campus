@@ -11,7 +11,6 @@ const zonaCrea = ref(null)
 const comunicacionVirtual = ref(null)
 
 const toggleModal = (modalactivo) => {
-  console.log(modalactivo);
   if (modalactivo == 'plataformasVirtuales') {
     plataformasVirtuales.value = !plataformasVirtuales.value;
   }
