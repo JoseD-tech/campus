@@ -46,7 +46,7 @@ const toggleModal = (modalactivo) => {
         <div class="h-full row-span-2">
           <button type="button" class="block bg-blue-600 h-full w-full text-white font-medium uppercase rounded-md py-4 mb-4"
             @click="toggleModal('plataformasVirtuales')">
-            plataforma varinas
+            plataformas virtuales
           </button>
           <BaseModal :modalActive="plataformasVirtuales" @close-modal="toggleModal('plataformasVirtuales')">
             <div class="text-black">
