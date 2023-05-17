@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         viewer: true,
     },
     modules: [
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+        '@pinia/nuxt',
     ]
 })

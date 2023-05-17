@@ -1,4 +1,7 @@
 <script setup>
+import { useEnlaces } from '@/store/store'
+
+const enlaces = useEnlaces()
 
 const plataformasVirtuales = ref(null)
 const campusConvenios = ref(null)
@@ -28,6 +31,7 @@ const toggleModal = (modalactivo) => {
     comunicacionVirtual.value = !comunicacionVirtual.value;
   }
 };
+
 </script>
 
 
@@ -43,19 +47,19 @@ const toggleModal = (modalactivo) => {
         <div class="h-full row-span-2">
           <button type="button" class="block bg-blue-600 h-full w-full text-white font-medium uppercase rounded-md py-4 mb-4"
             @click="toggleModal('plataformasVirtuales')">
-            plataforma varina
+            plataforma varinas
           </button>
           <BaseModal :modalActive="plataformasVirtuales" @close-modal="toggleModal('plataformasVirtuales')">
             <div class="text-black">
               <h1 class="text-4xl font-light mb-10 text-center">PLATAFORMA VIRTUALES</h1>
-              <nuxt-link to="https://twitter.com/nuxt_js" target="_blank"
-                class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300">OTOMACOS</nuxt-link>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-orange-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-orange-500 hover:text-orange-500 ease-in-out duration-300">VARINAS</nuxt-link>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300">CATHARY</nuxt-link>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-red-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-red-500 hover:text-red-500 ease-in-out duration-300">COSPES</nuxt-link>
+              <nuxt-link :to="enlaces.plataformaVarinas[0].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300">{{enlaces.plataformaVarinas[0].titulo}}</nuxt-link>
+              <nuxt-link :to="enlaces.plataformaVarinas[1].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-orange-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-orange-500 hover:text-orange-500 ease-in-out duration-300">{{enlaces.plataformaVarinas[1].titulo}}</nuxt-link>
+              <nuxt-link :to="enlaces.plataformaVarinas[2].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300">{{enlaces.plataformaVarinas[2].titulo}}</nuxt-link>
+              <nuxt-link :to="enlaces.plataformaVarinas[3].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-red-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-red-500 hover:text-red-500 ease-in-out duration-300">{{enlaces.plataformaVarinas[3].titulo}}</nuxt-link>
             </div>
           </BaseModal>
         </div>
@@ -70,14 +74,14 @@ const toggleModal = (modalactivo) => {
           <BaseModal :modalActive="campusConvenios" @close-modal="toggleModal('campusConvenios')">
             <div class="text-black">
               <h1 class="text-4xl font-light mb-10 text-center">CAMPUS VIRTUALES UNELLEZ - CONVENIOS</h1>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300">CARIBE</nuxt-link>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-orange-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-orange-500 hover:text-orange-500 ease-in-out duration-300">ARAWAK</nuxt-link>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300">SENNA</nuxt-link>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-red-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-red-500 hover:text-red-500 ease-in-out duration-300">MARICHE</nuxt-link>
+              <nuxt-link :to="enlaces.campusVirtuales[0].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300">{{enlaces.campusVirtuales[0].titulo}}</nuxt-link>
+              <nuxt-link :to="enlaces.campusVirtuales[1].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-orange-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-orange-500 hover:text-orange-500 ease-in-out duration-300">{{enlaces.campusVirtuales[1].titulo}}</nuxt-link>
+              <nuxt-link :to="enlaces.campusVirtuales[2].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300">{{enlaces.campusVirtuales[2].titulo}}</nuxt-link>
+              <nuxt-link :to="enlaces.campusVirtuales[3].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-red-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-red-500 hover:text-red-500 ease-in-out duration-300">{{enlaces.campusVirtuales[3].titulo}}</nuxt-link>
             </div>
           </BaseModal>
         </div>
@@ -130,15 +134,12 @@ const toggleModal = (modalactivo) => {
           <BaseModal :modalActive="zonaCrea" @close-modal="toggleModal('zonaCrea')">
             <div class="text-black">
               <h1 class="text-4xl font-light mb-10 text-center">ZONA CREA</h1>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300">FORMACION
-                DITED</nuxt-link>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-orange-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-orange-500 hover:text-orange-500 ease-in-out duration-300">LABORATORIO
-                DE PRODUCCION</nuxt-link>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300">AULAS
-                MODELO</nuxt-link>
+              <nuxt-link :to="enlaces.zonaCrea[0].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300">{{enlaces.zonaCrea[0].titulo}}</nuxt-link>
+              <nuxt-link :to="enlaces.zonaCrea[1].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-orange-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-orange-500 hover:text-orange-500 ease-in-out duration-300">{{enlaces.zonaCrea[1].titulo}}</nuxt-link>
+              <nuxt-link :to="enlaces.zonaCrea[2].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300">{{enlaces.zonaCrea[2].titulo}}</nuxt-link>
             </div>
           </BaseModal>
         </div>
@@ -158,8 +159,8 @@ const toggleModal = (modalactivo) => {
                 en Linea</nuxt-link>
               <nuxt-link to=""
                 class="block text-center py-4 mt-4 font-semibold bg-orange-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-orange-500 hover:text-orange-500 ease-in-out duration-300">Radio</nuxt-link>
-              <nuxt-link to=""
-                class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300">TV</nuxt-link>
+              <nuxt-link :to="enlaces.comunicacionVirtual[0].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300">{{enlaces.comunicacionVirtual[0].titulo}}</nuxt-link>
             </div>
           </BaseModal>
         </div>
