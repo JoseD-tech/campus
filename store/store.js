@@ -32,22 +32,23 @@ export const useEnlaces = defineStore('Enlaces', {
                 titulo: 'ARAWAK',
                 url: 'http://campus.unellez.edu.ve/arawak',
             },
-            {
-                titulo: 'SENNA',
-                url: 'http://campus.unellez.edu.ve/senna',
-            },
-            
+
+
         ],
         produccionCreacion: [
             {
-                titulo: '',
-                url: '',
+                titulo: 'ARSE',
+                url: 'https://unellez.edu.ve/portal/',
             }
         ],
         formacionCapacitacion: [
             {
                 titulo: 'MARICHE',
                 url: 'http://campus.unellez.edu.ve/mariche',
+            }, 
+            {
+                titulo: 'SENNA',
+                url: 'http://campus.unellez.edu.ve/senna',
             },
         ],
         zonaCrea: [
