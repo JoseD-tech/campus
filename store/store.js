@@ -53,7 +53,7 @@ export const useEnlaces = defineStore('Enlaces', {
                 url: '',
             },
             {
-                titulo: 'Timoto Ciucas',
+                titulo: 'Timoto Cuicas',
                 url: 'http://edudigital.unellez.edu.ve/timoto-cuicas/',
             },
         ],
