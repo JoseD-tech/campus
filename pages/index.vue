@@ -151,7 +151,7 @@ const toggleModal = (modalactivo) => {
                 PRODUCCIÓN, CREACIÓN Y GESTIÓN ACADEMICA
               </h1>
               <nuxt-link
-                :to="enlaces.produccionCreacion[0].url"
+                :to="enlaces.produccionCreacion[0].url" target="_blank"
                 class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300"
                 >{{enlaces.produccionCreacion[0].titulo}}</nuxt-link
               >
