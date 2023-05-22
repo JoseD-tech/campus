@@ -24,7 +24,7 @@ export const useEnlaces = defineStore('Enlaces', {
             },
             {
                 titulo: 'CUIVAS',
-                url: 'https://cuivas.unellez.org/',
+                url: 'http://campus.unellez.edu.ve/guahibo/',
             },
         ],
         campusVirtuales: [
