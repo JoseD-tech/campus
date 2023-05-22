@@ -96,6 +96,12 @@ const toggleModal = (modalactivo) => {
                 class="block text-center py-4 mt-4 font-semibold bg-green-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-green-700 hover:text-green-700 ease-in-out duration-300"
                 >{{ enlaces.plataformaVarinas[3].titulo }}</nuxt-link
               >
+              <nuxt-link
+                :to="enlaces.plataformaVarinas[4].url"
+                target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-cyan-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-cyan-700 hover:text-cyan-700 ease-in-out duration-300"
+                >{{ enlaces.plataformaVarinas[4].titulo }}</nuxt-link
+              >
             </div>
           </BaseModal>
         </div>
@@ -140,7 +146,7 @@ const toggleModal = (modalactivo) => {
             class="block bg-red-600 w-full h-full text-white font-medium uppercase rounded-md py-4 px-4 mb-4"
             @click="toggleModal('produccionAcademica')"
           >
-            PRODUCCIÓN, CREACIÓN Y GESTIÓN ACADEMICA
+            GESTIÓN ACADEMICA
           </button>
           <BaseModal
             :modalActive="produccionAcademica"
@@ -148,7 +154,7 @@ const toggleModal = (modalactivo) => {
           >
             <div class="text-black">
               <h1 class="text-4xl font-light mb-10 text-center">
-                PRODUCCIÓN, CREACIÓN Y GESTIÓN ACADEMICA
+                GESTIÓN ACADEMICA
               </h1>
               <nuxt-link
                 :to="enlaces.produccionCreacion[0].url" target="_blank"
@@ -156,14 +162,19 @@ const toggleModal = (modalactivo) => {
                 >{{enlaces.produccionCreacion[0].titulo}}</nuxt-link
               >
               <nuxt-link
-                to=""
+              :to="enlaces.produccionCreacion[1].url" target="_blank"
                 class="block text-center py-4 mt-4 font-semibold bg-orange-500 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-orange-500 hover:text-orange-500 ease-in-out duration-300"
-                >HISTORICO EaD</nuxt-link
+                >{{enlaces.produccionCreacion[1].titulo}}</nuxt-link
               >
               <nuxt-link
-                to=""
+              :to="enlaces.produccionCreacion[2].url" target="_blank"
                 class="block text-center py-4 mt-4 font-semibold bg-blue-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-blue-700 hover:text-blue-700 ease-in-out duration-300"
-                >Nube Edudigital</nuxt-link
+                >{{enlaces.produccionCreacion[2].titulo}}</nuxt-link
+              >
+              <nuxt-link
+                :to="enlaces.produccionCreacion[3].url" target="_blank"
+                class="block text-center py-4 mt-4 font-semibold bg-red-700 px-4 rounded-md cursor-pointer text-white border hover:bg-white hover:border-red-700 hover:text-red-700 ease-in-out duration-300"
+                >{{enlaces.produccionCreacion[3].titulo}}</nuxt-link
               >
             </div>
           </BaseModal>

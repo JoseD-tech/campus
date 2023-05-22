@@ -22,6 +22,10 @@ export const useEnlaces = defineStore('Enlaces', {
                 titulo: 'COSPES',
                 url: 'http://edudigital.unellez.edu.ve/cospes/',
             },
+            {
+                titulo: 'CUIVAS',
+                url: 'https://cuivas.unellez.org/',
+            },
         ],
         campusVirtuales: [
             {
@@ -39,7 +43,19 @@ export const useEnlaces = defineStore('Enlaces', {
             {
                 titulo: 'ARSE',
                 url: 'https://unellez.edu.ve/portal/',
-            }
+            },
+            {
+                titulo: 'Historico EaD',
+                url: '',
+            },
+            {
+                titulo: 'Nube Edudigital',
+                url: '',
+            },
+            {
+                titulo: 'Timoto Ciucas',
+                url: 'http://edudigital.unellez.edu.ve/timoto-cuicas/',
+            },
         ],
         formacionCapacitacion: [
             {
