@@ -43,7 +43,7 @@ const toggleModal = (modalactivo) => {
           alt="logo Dited" />
       </div>
       <h1 class="text-4xl uppercase font-light mb-10 text-center">
-        Campus Virtual - UNELLEZ
+        Campus Virtuales UNELLEZ
       </h1>
 
       <div class="md:grid md:grid-cols-3 grid-rows-4 gap-4">
