@@ -61,10 +61,14 @@ export const useEnlaces = defineStore('Enlaces', {
             {
                 titulo: 'MARICHE',
                 url: 'http://campus.unellez.edu.ve/mariche',
-            }, 
+            },
             {
                 titulo: 'SENNA',
                 url: 'http://campus.unellez.edu.ve/senna',
+            },
+            {
+                titulo: 'Formación y Proyectos',
+                url: 'campus.unellez.edu.ve/formacion/',
             },
         ],
         zonaCrea: [
