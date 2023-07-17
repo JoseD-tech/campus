@@ -68,7 +68,7 @@ export const useEnlaces = defineStore('Enlaces', {
             },
             {
                 titulo: 'Formación y Proyectos',
-                url: 'campus.unellez.edu.ve/formacion/',
+                url: 'http://campus.unellez.edu.ve/formacion/',
             },
         ],
         zonaCrea: [
