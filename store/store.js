@@ -64,7 +64,7 @@ export const useEnlaces = defineStore('Enlaces', {
             },
             {
                 titulo: 'SENNA',
-                url: 'http://campus.unellez.edu.ve/senna',
+                url: 'http://formacion.unellez.edu.ve/senna',
             },
             {
                 titulo: 'Formación y Proyectos',
